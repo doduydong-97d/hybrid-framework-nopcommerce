@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite parallel="false" name="nopCommerce">
+
+	<parameter name="site" value="user" />
+	<parameter name="server" value="demo" />
+	
+	<test name="ChromeTest">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="autotest.user.User_01_Register" />
+		</classes>
+	</test>
+
+	<test name="EdgeTest">
+		<parameter name="browser" value="edge" />
+		<classes>
+			<class name="autotest.user.User_01_Register" />
+		</classes>
+	</test>
+
+	<test name="FirefoxTest">
+		<parameter name="browser" value="firefox" />
+		<classes>
+			<class name="autotest.user.User_01_Register" />
+		</classes>
+	</test>
+
+</suite>
