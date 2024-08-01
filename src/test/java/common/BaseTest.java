@@ -1,6 +1,7 @@
 package common;
 
 import java.time.Duration;
+import java.util.Random;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -70,6 +71,10 @@ public class BaseTest {
 	protected void quitDriver() {
 		driver.manage().deleteAllCookies();
 		driver.quit();
+	}
+
+	protected int getRandomNumbers() {
+		return new Random().nextInt(99999);
 	}
 
 }

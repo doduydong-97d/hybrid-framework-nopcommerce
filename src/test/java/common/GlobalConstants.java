@@ -20,7 +20,7 @@ public class GlobalConstants {
 	public static final String FILE_SEP = File.separator;
 	public static final String UPLOAD_FILES_FOLDER = PROJECT_PATH + FILE_SEP + "uploadFiles" + FILE_SEP;
 
-	public static final int LONG_TIMEOUT = 30;
+	public static final int LONG_TIMEOUT = 10;
 	public static final int SHORT_TIMEOUT = 5;
 	public static final int ONE_SEC = 1;
 
