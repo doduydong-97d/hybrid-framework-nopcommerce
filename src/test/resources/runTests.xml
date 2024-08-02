@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<suite parallel="tests" name="nopCommerce">
+<suite parallel="false" name="nopCommerce">
+
+	<listeners>
+		<listener class-name="common.ReportsListener" />
+	</listeners>
 
 	<parameter name="site" value="user" />
 	<parameter name="server" value="demo" />
-	
+
 	<test name="ChromeTest">
 		<parameter name="browser" value="chrome" />
 		<classes>

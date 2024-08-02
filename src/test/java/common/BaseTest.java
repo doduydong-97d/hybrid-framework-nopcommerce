@@ -11,6 +11,10 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 public class BaseTest {
 	private WebDriver driver;
 
+	public WebDriver getDriver() {
+		return driver;
+	}
+
 	protected WebDriver initDriver(String browserName, String siteName, String serverName) {
 		switch (browserName.toLowerCase()) {
 		case "chrome":
